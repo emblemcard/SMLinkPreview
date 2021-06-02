@@ -11,18 +11,18 @@
 import UIKit
 
 public class LinkPreview: UIView {
-    @IBOutlet weak var topLevelView: UIView!
-    @IBOutlet weak var contentView: UIView!
+    @IBOutlet public weak var topLevelView: UIView!
+    @IBOutlet public weak var contentView: UIView!
     
     @IBOutlet weak var imageHeight: NSLayoutConstraint!
     @IBOutlet public weak var image: UIImageView!
     
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var url: UILabel!
-    @IBOutlet weak var icon: UIImageView!
+    @IBOutlet public weak var title: UILabel!
+    @IBOutlet public weak var url: UILabel!
+    @IBOutlet public weak var icon: UIImageView!
     @IBOutlet weak var iconContainerWidth: NSLayoutConstraint!
     
-    @IBOutlet weak var textAndIconContainer: UIView!
+    @IBOutlet public weak var textAndIconContainer: UIView!
     
     public var textAndIconAction:(()->())?
     private var haveImage: Bool = false
